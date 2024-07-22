@@ -1,0 +1,217 @@
+// Import Bootstrap
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+
+html, body {
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("../assets/background/linear_white.jpg");
+}
+
+
+
+.bi-file-pdf{
+    color: black;
+}
+
+header {
+    background-color: #ffffff;
+    position: sticky;
+    top: 0;
+    z-index: 6;
+    box-shadow: 0 50px 50px 0 white;
+
+    .dropdown {
+        visibility: hidden;
+    }
+
+    nav{
+        div{
+            div{
+                display: flex;
+                justify-content: center;
+                text-align: center;
+            }
+        }
+    }
+
+    @media (max-width: 990px) {
+        .dropdown {
+            visibility: visible;
+        }
+
+        nav div div {
+            display: none;
+        }
+    }
+}
+
+// Card + coord.
+.card{
+    max-width: 540px; 
+    border: none;
+    background-color: unset;
+}
+
+.center-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+    clip-path: circle(40%);
+    margin-top: 10px;
+}
+
+.card-subtitle {
+    color: #1B90B5;
+}
+
+.coord > address > ul {
+    list-style: none;
+    padding: 0;
+}
+
+address{
+    margin-top: 10px;
+}
+
+// Self intro
+.t1, .t3{
+    flex-shrink: 0;
+}
+.t3{
+    transform: scaleX(-1);
+    -moz-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    -ms-transform: scaleX(-1);
+    align-items: flex-end;
+}
+.t2{
+    flex-shrink: 2;
+}
+
+
+.self-intro{
+    min-width: 150px;
+    max-width: 400px;
+    flex-shrink: 2;
+}
+
+.top, .bottom{
+    padding: 0;
+    margin: 0;
+    width: 35px;
+    height: 35px;
+    color: #1B90B5;
+}
+
+// Titles
+
+.grad-title, .grad-details, .grad-expl{
+    text-align: start;
+}
+
+.grad-details{
+    font-style: italic;
+    font-size: 14px;
+    margin-bottom: 1em;
+}
+
+h2{
+    margin: 50px 0 35px 0;
+    padding-top: 25vh;
+    color: #1B90B5;
+}
+
+
+.div-icon{
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-self: start;
+}
+
+.bi-award-fill{
+    margin-top: 3px;
+    // position: static;
+}
+
+.bi-award-fill, .grad-title{
+    color: #00D863;
+}
+
+section:not(#intro){
+    margin-top: 100vh;
+    margin-bottom: 100vh;
+}
+
+#intro{
+    margin-top: 10vh;
+}
+
+
+// Skills
+.skill-title, .hobbies-titles{
+    color: #00D863;
+}
+
+.skills-list{
+    margin-bottom: 20px;
+    li{
+        border: none;
+        background-color: unset;
+    }
+}
+
+// Hobbies
+
+.hobbie, .hobbie ul li, .hobbies-titles{
+    hyphens: manual;
+    word-wrap: break-word;
+    
+    ul li{
+        border: none;
+        background-color: unset;
+    }
+}
+
+.hobbie{
+    margin-bottom: 20px;
+}
+
+@media (max-width: 576px) {
+
+    html, body{
+        font-size: 12px;
+    }
+
+    section{
+        margin-top: 5vh;
+        margin-bottom: 5vh;
+    }
+    
+    #intro{
+        margin-top: 10vh;
+    }
+    .grad-details{
+        font-size: 12px;
+    }
+
+    .card {
+        max-width: 100%;
+    }
+
+    .coord {
+        text-align: left;
+    }
+}
